@@ -12,7 +12,7 @@ public class Main {
         //Program waiting for user input.
         System.out.println("Insert the length of the first stick here:");
 
-        while (!userInput.hasNextDouble()) {
+        while (!userInput.hasNextDouble()) {					//TODO: man kan måske sætte de 3 while loops i en metode 
             String word = userInput.next();
             System.err.println(word + " is not a valid!");
         }
@@ -35,10 +35,10 @@ public class Main {
     }
     public static void calculateUserinput(double lengthOne, double lengthTwo, double lengthThree) {
 
-        //Variables.
+        //Variables.				//TO DO: du kan bare slette dine 3 Variables
         double callengthOne = lengthOne;
         double callengthTwo = lengthTwo;
-        double callengthThree = lengthThree;
+        double callengthThree = lengthThree; 
 
         //If statements.
         if (lengthOne <= 0 || lengthTwo <= 0 || lengthThree <= 0) {
